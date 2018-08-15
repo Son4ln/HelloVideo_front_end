@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    background-color: #ccc;
+    background-color: #595b5c;
     margin: 0;
     padding: 0;
     font-size: 14px;
@@ -57,7 +57,6 @@ dl {
 
 // end Preset css
 // button
-button,
 .button {
     border-radius: 20px;
     height: 40px;
@@ -96,6 +95,7 @@ button,
     background: none;
     &:hover {
         color: #fff;
+        border: none;
         background: -webkit-linear-gradient(11deg, #811975, #ec91b6);
         background: -o-linear-gradient(11deg, #811975, #ec91b6);
         background: linear-gradient(79deg, #811975, #ec91b6);
@@ -112,22 +112,22 @@ button,
 
 // end button
 // =========Header
-header {
+.header {
+    border: none !important;
     padding: 22px 0;
     color: #fff;
+    background: none !important;
     .wrapper {
-        max-width: 1118px;
-        padding: 0 15px;
+        max-width: 1148px;
         margin: auto;
-        display: flex;
-        align-items: center;
     }
     .logo {
         width: 256px;
     }
 }
 
-.nav-header {
+.navbar-collapse {
+    padding-right: 0;
     margin-left: auto;
     ul {
         margin: 0;
@@ -135,14 +135,17 @@ header {
         justify-content: flex-end;
     }
     li {
+        a {
+            padding: 9px 15px !important;
+            color: #fff !important;
+        }
         &:nth-child(2) {
-            padding: 0 40px;
+            padding: 0 25px;
         }
         &:last-child {
             a {
                 border-radius: 20px;
                 border: 1px solid #fff;
-                padding: 9px 15px;
             }
         }
     }
@@ -197,7 +200,7 @@ footer {
     color: #4c4c4c;
     text-align: center;
     .social {
-        padding-bottom: 68px;
+        padding-bottom: 48px;
         padding-top: 65px;
         i {
             display: inline-block;
@@ -212,7 +215,7 @@ footer {
         }
     }
     li {
-        padding: 0 16px;
+        padding: 20px 16px 0;
         display: inline-block;
     }
 }
@@ -222,3 +225,53 @@ address {
 }
 
 // end Footer
+// responsive
+@media screen and (max-width:767px) {
+    // header
+    .header {
+        .navbar-toggle {
+            margin-top: 0;
+        }
+        .logo {
+            padding-left: 15px;
+        }
+        .navbar-collapse {
+            border: none !important;
+            box-shadow: none !important;
+        }
+        ul {
+            display: block;
+        }
+        .nav {
+            li {
+                padding: 0 !important;
+                max-width: max-content;
+            }
+        }
+    }
+    // header
+    // News
+    #news {
+        dt {
+            float: none;
+        }
+        dd {
+            float: none;
+            margin: 0;
+            padding-top: 10px;
+        }
+    }
+    // End news
+}
+
+@media screen and (max-width:375px) {
+    // logo
+    .header {
+        .logo {
+            width: 75%;
+        }
+    }
+    // end logo
+}
+
+//end responsive;

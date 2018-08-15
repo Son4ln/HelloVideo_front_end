@@ -13,28 +13,43 @@
 </head>
 
 <body>
+    <!-- header -->
     <header>
-        <div class="wrapper">
-            <div class="logo">
-                <a href="./"><img src="images/logo.png" alt="logo"></a>
+        <nav class="header navbar navbar-default">
+            <div class="wrapper">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                      <span class="sr-only">Toggle navigation</span>
+                                      <span class="icon-bar"></span>
+                                      <span class="icon-bar"></span>
+                                      <span class="icon-bar"></span>
+                                    </button>
+                        <div class="logo">
+                            <img src="images/logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">料金プラン</a></li>
+                            <li><a href="#">ログイン</a></li>
+                            <li><a href="#">アカウント登録</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <nav class="nav-header">
-                <ul>
-                    <li><a href="" title="料金プラン">料金プラン</a></li>
-                    <li><a href="" title="ログイン">ログイン</a></li>
-                    <li><a href="" title="アカウント登録">アカウント登録</a></li>
-                </ul>
-            </nav>
-        </div>
+        </nav>
     </header>
+
+    <!-- end header -->
     <section>
-        <button class="main-button">
+        <button class="main-button button">
             main-button
         </button>
-        <button class="sub-button">
+        <button class="sub-button button">
             sub-button
         </button>
-        <button class="billing-button">
+        <button class="billing-button button">
             billing-button
         </button>
     </section>
