@@ -1,0 +1,347 @@
+/* ===========================general */
+.content-wrapper {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.mx-0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.px-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.block {
+    display: flex;
+}
+
+.desc-icon {
+    width: 100px;
+}
+
+.block .desc {
+    display: table;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.block .desc h3 {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.block .desc p {
+    font-size: 34px;
+    color: #fff;
+    line-height: 50px;
+    margin-top: 30px;
+}
+
+/* ===========================end general */
+/* ========================intro block */
+header {
+    z-index: 1;
+    position: relative;
+}
+
+#intro {
+    min-height: 810px;
+    padding-top: 200px;
+    background: url('../images/top.jpg');
+    background-repeat: no-repeat;
+    background: cover;
+    background-position: center;
+    z-index: 0;
+    position: relative;
+}
+
+#intro .intro_title {
+    color: #fff;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 42px;
+}
+
+#intro .upload-block {
+    min-height: 300px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 20px;
+    background: url('../images/triangle_shadow.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.upload-block .upload-box {
+    border: dashed 2px #4c4c4c;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-weight: normal;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.78);
+}
+
+.upload-block .upload-box .upload-title {
+    color: #fff;
+}
+
+.upload-block .row {
+    display: flex;
+}
+.upload-block .upload-box h3 {
+    font-size: 21px;
+}
+.upload-block .upload-box p {
+    font-size: 18px;
+    color: #9b9b9b;
+}
+
+.upload-block .upload-box .icon-upload {
+    width: 25%;
+}
+
+.upload-block .upload-box .drop-drag-title {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.upload-block .upload-box .drop-drag-title span {
+    color: #9b9b9b;
+}
+
+.upload-block .upload-box .drop-drag-title .upload-btn {
+    color: #9b3685;
+    display: inline-block;
+}
+
+/* ========================end intro block */
+/* ========================intro1 block */
+#intro1 {
+    background: #000;
+    padding: 80px 0;
+}
+
+#intro1 .block-1 {
+    margin-bottom: 100px;
+}
+
+/* ========================end intro1 block */
+/* ========================intro2 block */
+#intro2 {
+    background: #fff;
+    padding: 80px 0;
+}
+
+#intro2 .block-1 {
+    margin-bottom: 100px;
+}
+
+#intro2 .block .desc h3,
+#intro2 .block .desc p {
+    color: #000;
+}
+/* ========================end intro2 block */
+/* ========================intro3 block */
+#intro3  {
+    background: #000;
+    padding: 80px 0;
+}
+
+#intro3 .desc h3,
+#intro3 .desc h4,
+#intro3 .desc p {
+    color: #fff;
+    text-align: center;
+    margin: 40px 0;
+}
+
+#intro3 .desc h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#intro3 .desc h4 {
+    font-size: 36px;
+    letter-spacing: 1.5px;
+}
+
+#intro3 .desc p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+#intro3 .img-block {
+    max-width: 750px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.feature-desc .feature-inner h3,
+.feature-desc .feature-inner p {
+    color: #fff;
+}
+
+.feature-desc .feature-inner h3 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+}
+
+.feature-desc .feature-inner p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+}
+/* ========================end intro3 block */
+/* ========================intro4 block */
+#intro4 {
+    background: #f5f6f9;
+    padding-top: 100px;
+}
+
+#intro4 h3,
+#intro4 p {
+    color: #000;
+}
+/* ========================end intro4 block */
+/* ========================intro-plan block */
+#intro-plan {
+    background: #fff;
+    padding: 80px 0;
+}
+
+#intro-plan .title-block h3,
+#intro-plan .title-block h4 {
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#intro-plan .title-block h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#intro-plan .title-block h4 {
+    font-size: 36px;
+    letter-spacing: 1.5px;
+}
+
+.plan-block {
+    margin-top: 80px;
+}
+
+.plan {
+    border-radius: 4px;
+    padding: 30px 0;
+    height: 100%;
+}
+
+.plan-block .plan1 {
+    background: #f5f6f9;
+}
+
+.plan-title {
+    text-align: center;
+}
+
+.plan-title h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.plan-title h4 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+.plan-title p {
+    color: #9b9b9b;
+    font-size: 12px;
+    margin: 50px 0;
+    line-height: 22px;
+}
+
+.plan-title hr {
+    width: 80%;
+}
+
+.plan-services {
+    margin-top: 50px;
+}
+
+.plan-services ul li {
+    font-size: 14px;
+    padding: 10px 0 10px 30px;
+    color: #9b9b9b;
+}
+
+.plan-services ul li i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.active-icon {
+    color: #9b3685;
+}
+
+.plan-shadow {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.plan .main-button {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: unset;
+    padding: 10px 20px;
+}
+/* ========================end intro-plan block */
+/* ========================reponsive block */
+@media (max-width: 970px) {
+    /* ========================intro block */
+    #intro .upload-block {
+        position: unset;
+        margin-top: 50px;
+    }
+
+    .upload-block .row {
+        display: unset;
+    }
+    /* ========================end intro block */
+    /* ========================intro1 block */
+    .block {
+        display: block;
+    }
+
+    .block .desc {
+        display: unset;
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+    }
+    #intro1 .block-2 .desc,
+    #intro2 .block-2 .desc {
+        float: right;
+        text-align: right;
+    }
+    /* ========================end intro1 block */
+}
+/* ========================end reponsive block */
