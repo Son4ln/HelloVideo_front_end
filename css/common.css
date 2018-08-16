@@ -83,8 +83,20 @@ img {
     margin-left: auto;
 }
 
+.mx-0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 
 /*  end margin */
+
+/* padding */
+.px-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+/* end padding */
 
 
 /*font*/

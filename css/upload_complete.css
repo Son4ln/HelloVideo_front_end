@@ -1,0 +1,283 @@
+.header .nav a {
+    color: #9b9b9b !important;
+}
+
+.navbar-collapse li:last-child a {
+    border-radius: 20px;
+    border: 1px solid #9b9b9b;
+}
+
+.desc-icon {
+    width: 100px;
+}
+/* ==================upload-complete block */
+#upload-complete {
+    padding: 80px 0;
+}
+
+#upload-complete .complete-title {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#upload-complete .complete-title .mdi {
+    color: #7ed321;
+    font-size: 3.8rem;
+    margin-right: 10px;
+}
+
+#upload-complete .video-info {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#upload-complete .video-info p {
+    font-size: 1.4rem;
+    color: #9b9b9b;
+    margin-bottom: 20px;
+}
+
+#upload-complete .video-info .file-name {
+    color: #000;
+    font-size: 1.6rem;
+}
+
+#upload-complete .video-info .file-name .mdi {
+    margin-right: 10px;
+}
+
+.setting-file {
+    margin-bottom: 50px;
+}
+
+.setting-file .setting-inner:first-child {
+    border-right: solid 1px #e4e8e8;
+}
+
+.setting-file .setting-inner {
+    text-align: center;
+}
+
+.setting-file .setting-inner h3 {
+    font-size: 2rem;
+    color: #9b3685;
+    margin-bottom: 30px;
+}
+
+.setting-file .setting-inner .button {
+    width: unset;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.setting-file .setting-inner .setting-text {
+    font-size: 1.2rem;
+    color: #9b9b9b;
+    margin-bottom: 30px;
+}
+
+.setting-file .setting-inner .setting-icon {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.setting-file .setting-inner .setting-desc {
+    font-size: 1.4rem;
+    letter-spacing: 0.6px;
+    line-height: 20px;
+    color: #9b9b9b;
+}
+/* ==================end upload-complete block */
+
+/* =====================setting-intro */
+#setting-intro {
+    padding: 100px 0;
+    background: #2e2e2e;
+}
+
+#setting-intro .intro-desc,
+#setting-intro2 .intro-desc {
+    margin-left: 20px;
+}
+
+#setting-intro .intro-desc h3,
+#setting-intro1 .intro-desc h3,
+#setting-intro2 .intro-desc h3,
+#setting-intro3 .intro-desc h3 {
+    font-size: 1.6rem;
+    letter-spacing: 0.7px;
+    margin: 30px 0;
+    color: #9b9b9b;
+}
+
+#setting-intro .intro-desc p,
+#setting-intro1 .intro-desc p,
+#setting-intro2 .intro-desc p,
+#setting-intro3 .intro-desc p {
+    letter-spacing: 1.5px;
+    font-size: 3.4rem;
+    line-height: 52px;
+    color: #fff;
+}
+/* =====================end setting-intro */
+/* =====================setting-intro1 */
+#setting-intro1 {
+    padding: 80px;
+}
+
+#setting-intro1 .intro-desc {
+    margin-top: 80px;
+}
+
+#setting-intro1 .intro-desc h3,
+#setting-intro1 .intro-desc p
+ {
+    color: #000;
+}
+/* =====================end setting-intro1 */
+/* =====================setting-intro2 */
+#setting-intro2 {
+    background: #000;
+    padding: 80px;
+}
+/* =====================end setting-intro2 */
+/* =====================setting-intro3 */
+#setting-intro3 {
+    padding: 100px 0 0 80px;
+}
+
+#setting-intro3 .intro-desc h3,
+#setting-intro3 .intro-desc p
+ {
+    color: #000;
+}
+/* =====================end setting-intro3 */
+/* =====================setting-intro4 */
+#setting-intro4 {
+    background-image: linear-gradient(206deg, #000000, #0f0f0f);
+    padding: 100px 0;
+}
+
+#setting-intro4 .title-block {
+    text-align: center;
+    color: #fff;
+}
+
+#setting-intro4 .title-block h3 {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+    letter-spacing: 0.7px;
+}
+
+#setting-intro4 .title-block h4 {
+    font-size: 3.4rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 40px;
+}
+
+#setting-intro4 .title-block p {
+    font-size: 1.6rem;
+    letter-spacing: 0.7px;
+    line-height: 1.88;
+    margin-bottom: 50px;
+}
+
+.services-desc {
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.services-desc .services-block {
+    padding-left: 100px;
+}
+
+.services-desc .service {
+    margin-bottom: 80px;
+    color: #fff;
+    display: table;
+}
+
+.services-desc .service h3 {
+    font-size: 1.6rem;
+    letter-spacing: 0.8px;
+}
+
+.services-desc .service p {
+    font-size: 1.4rem;
+    letter-spacing: 0.6px;
+    line-height: 1.67;
+}
+
+.services-desc-img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+/* =====================end setting-intro4 */
+
+@media (max-width: 970px) {
+    .setting-file .setting-inner:first-child {
+        border-right: unset;
+        border-bottom: solid 1px #e4e8e8;
+    }
+
+    #setting-intro .intro-desc,
+    #setting-intro1 .intro-desc,
+    #setting-intro2 .intro-desc,
+    #setting-intro3 .intro-desc {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .setting-file .setting-inner {
+        padding: 50px 0;
+    }
+
+    #setting-intro1 {
+        padding: 80px 20px;
+    }
+
+    #setting-intro2 {
+        padding: 80px 20px;
+    }
+
+    #setting-intro2 .intro-desc {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    #setting-intro3 {
+        padding-left: 0;
+    }
+
+    .services-desc {
+        margin-left: 0;
+    }
+
+    .services-desc .d-flex {
+        display: block;
+    }
+
+    .services-desc .services-block {
+        padding-left: 0;
+    }
+
+    .services-desc .services-block .service {
+        margin-left: 0;
+        text-align: center;
+        display: block;
+    }
+
+    .services-desc-img {
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+    }
+}
+/* ========================end reponsive block */
