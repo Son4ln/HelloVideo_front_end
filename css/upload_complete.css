@@ -76,6 +76,7 @@
     font-size: 1.2rem;
     color: #9b9b9b;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .setting-file .setting-inner .setting-icon {
