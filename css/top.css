@@ -33,13 +33,13 @@
 }
 
 .block .desc h3 {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #fff;
     font-weight: bold;
 }
 
 .block .desc p {
-    font-size: 34px;
+    font-size: 3.4rem;
     color: #fff;
     line-height: 50px;
     margin-top: 30px;
@@ -67,7 +67,7 @@ header {
     color: #fff;
     letter-spacing: 5px;
     text-shadow: 2px 2px 5px #000;
-    font-size: 42px;
+    font-size: 4.2rem;
 }
 
 #intro .upload-block {
@@ -104,10 +104,10 @@ header {
     display: flex;
 }
 .upload-block .upload-box h3 {
-    font-size: 21px;
+    font-size: 2.1rem;
 }
 .upload-block .upload-box p {
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #9b9b9b;
 }
 
@@ -116,7 +116,7 @@ header {
 }
 
 .upload-block .upload-box .drop-drag-title {
-    font-size: 14px;
+    font-size: 1.4rem;
     padding: 10px;
 }
 
@@ -171,17 +171,17 @@ header {
 }
 
 #intro3 .desc h3 {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
 #intro3 .desc h4 {
-    font-size: 36px;
+    font-size: 3.6rem;
     letter-spacing: 1.5px;
 }
 
 #intro3 .desc p {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 30px;
 }
 
@@ -197,13 +197,13 @@ header {
 }
 
 .feature-desc .feature-inner h3 {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: bold;
     letter-spacing: 0.8px;
 }
 
 .feature-desc .feature-inner p {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 20px;
     letter-spacing: 0.6px;
 }
@@ -222,7 +222,7 @@ header {
 /* ========================intro-plan block */
 #intro-plan {
     background: #fff;
-    padding: 80px 0;
+    padding: 80px 0 150px 0;
 }
 
 #intro-plan .title-block h3,
@@ -233,12 +233,12 @@ header {
 }
 
 #intro-plan .title-block h3 {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
 #intro-plan .title-block h4 {
-    font-size: 36px;
+    font-size: 3.6rem;
     letter-spacing: 1.5px;
 }
 
@@ -252,6 +252,12 @@ header {
     height: 100%;
 }
 
+.plan:hover {
+    transition: all 0.5s;
+    border: solid 1px #9b3685;
+    box-shadow: 0 2px 16px 0 rgba(155, 54, 133, 0.16);
+}
+
 .plan-block .plan1 {
     background: #f5f6f9;
 }
@@ -261,12 +267,12 @@ header {
 }
 
 .plan-title h3 {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 .plan-title h4 {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: bold;
     letter-spacing: 1px;
     margin-top: 30px;
@@ -274,7 +280,7 @@ header {
 
 .plan-title p {
     color: #9b9b9b;
-    font-size: 12px;
+    font-size: 1.2rem;
     margin: 50px 0;
     line-height: 22px;
 }
@@ -288,13 +294,13 @@ header {
 }
 
 .plan-services ul li {
-    font-size: 14px;
+    font-size: 1.4rem;
     padding: 10px 0 10px 30px;
     color: #9b9b9b;
 }
 
 .plan-services ul li i {
-    font-size: 20px;
+    font-size: 2rem;
     margin-right: 10px;
 }
 
@@ -306,11 +312,34 @@ header {
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12);
 }
 
-.plan .main-button {
+.plan .button {
     margin-top: 40px;
     margin-bottom: 20px;
     width: unset;
     padding: 10px 20px;
+}
+
+.plan3 .plan-title h3,
+.plan3 .plan-title h4,
+.plan4 .plan-title h3,
+.plan4 .plan-title h4 {
+    color: #9b3685;
+}
+
+.plan3 .plan-title h4 span,
+.plan4 .plan-title h4 span {
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+
+.plan3 .plan-title .payment-plan,
+.plan4 .plan-title .payment-plan {
+    margin: 0;
+}
+
+.plan3 .plan-title .plan-desc,
+.plan4 .plan-title .plan-desc {
+    margin-top: 2rem;
 }
 /* ========================end intro-plan block */
 /* ========================reponsive block */
@@ -343,5 +372,9 @@ header {
         text-align: right;
     }
     /* ========================end intro1 block */
+
+    .plan {
+        margin-bottom: 30px;
+    }
 }
 /* ========================end reponsive block */
