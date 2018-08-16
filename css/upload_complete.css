@@ -220,6 +220,30 @@
 }
 /* =====================end setting-intro4 */
 
+@media (max-width: 1275px) {
+    html {
+        font-size: 8px;
+    }
+
+    #setting-intro1 .intro-desc {
+        margin-top: 20px;
+    }
+    
+    #setting-intro .intro-desc h3,
+    #setting-intro1 .intro-desc h3,
+    #setting-intro2 .intro-desc h3,
+    #setting-intro3 .intro-desc h3 {
+        margin: 10px 0;
+    }
+
+    #setting-intro .intro-desc p,
+    #setting-intro1 .intro-desc p,
+    #setting-intro2 .intro-desc p,
+    #setting-intro3 .intro-desc p {
+        line-height: 40px;
+    }
+}
+
 @media (max-width: 970px) {
     .file-name {
         margin-top: 30px;
