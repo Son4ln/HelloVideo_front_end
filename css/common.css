@@ -4,10 +4,13 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-font-kerning: auto;
     font-kerning: auto;
 }
 
 .rotate-45 {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
@@ -54,14 +57,21 @@ img {
 }
 
 .flex-end {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
 .flex-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .justify-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -129,16 +139,16 @@ img {
     font-size: 22px;
 }
 
-.fs-36 {
-    font-size: 36px;
-}
-
 .fs-24 {
     font-size: 24px;
 }
 
 .fs-28 {
     font-size: 28px;
+}
+
+.fs-36 {
+    font-size: 36px;
 }
 
 
@@ -206,14 +216,15 @@ dl {
 }
 
 .button:disabled {
-    background: #e7e8ec !important;
+    background-color: #e7e8ec !important;
     border: none;
     color: #fff;
     cursor: not-allowed;
 }
 
 .button:disabled:hover {
-    background: #e7e8ec !important;
+    background-color: #e7e8ec !important;
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
 }
 
@@ -277,7 +288,11 @@ dl {
 
 .navbar-collapse ul {
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
@@ -318,12 +333,16 @@ dl {
 
 #news dt {
     font-weight: bold;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
     max-width: max-content;
     float: left;
 }
 
 #news dd {
     margin-left: auto;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
     max-width: max-content;
     float: right;
 }
@@ -355,6 +374,8 @@ footer .social {
 
 footer .social i {
     display: inline-block;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
     max-width: max-content;
     padding: 0 19px;
     font-size: 23px;
@@ -382,6 +403,7 @@ address {
     }
     .header .navbar-collapse {
         border: none !important;
+        -webkit-box-shadow: none !important;
         box-shadow: none !important;
     }
     .header ul {
@@ -389,6 +411,8 @@ address {
     }
     .header .nav li {
         padding: 0 !important;
+        max-width: -webkit-max-content;
+        max-width: -moz-max-content;
         max-width: max-content;
     }
     #news dt {
