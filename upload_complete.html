@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/upload_complete.css">
+    <link rel="stylesheet" href="css/popup.css">
 </head>
 
 <body>
@@ -68,7 +69,7 @@
                                 URLをコピー
                             </button>
 
-                            <p class="setting-text"><i class="mdi mdi-settings"></i>リンク設定</p>
+                            <p class="setting-text" data-toggle="modal" data-target="#setting-modal"><i class="mdi mdi-settings"></i>リンク設定</p>
 
                             <img src="images/complete_icon1.png" class="setting-icon"/>
 
@@ -87,7 +88,7 @@
                                 URLをコピー
                             </button>
 
-                            <p class="setting-text"><i class="mdi mdi-settings"></i>リンク設定</p>
+                            <p class="setting-text" data-toggle="modal" data-target="#setting-modal"><i class="mdi mdi-settings"></i>リンク設定</p>
 
                             <img src="images/complete_icon2.png" class="setting-icon"/>
 
@@ -310,8 +311,119 @@
         <address>&copy; 2018 vivito inc. All Rights Reserved.</address>
     </footer>
 
+    <!-- popup block -->
+    <div class="hv-popup">
+        <div class="modal fade" id="pre-login-modal" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <h3 class="modal-title">
+                    通知を受け取るには<br/>
+                    ログインしてください。
+                  </h3>
+
+                  <div class="login-type">
+                    <a class="btn gg-btn"><i class="fa fa-google" aria-hidden="true"></i> Googleアカウントでログイン</a>
+                    <a class="btn fb-btn"><i class="mdi mdi-facebook"></i> Facebookアカウントでログイン</a>
+                    <a class="btn ld-btn"><i class="fa fa-linkedin" aria-hidden="true"></i> Linkedinアカウントでログイン</a>
+                    <a class="btn main-button"><i><img src="images/hv-icon.png"/></i> HelloVideoアカウントでログイン</a>
+                  </div>
+
+                  <p class="register-text">HelloVideoアカウントを作成する場合は<span><a href="#">こちら</a></span></p>
+                </div>
+
+                <div class="modal-footer">
+                    <p>利用を継続することで HelloVideo の</p>
+                    <p><span><a href="#">利用規約</a></span>に同意したものとみなされます。</p>
+                </div>
+              </div>
+              
+            </div>
+        </div>
+
+        <div class="modal fade" id="email-modal" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="modal-title"><i class="mdi mdi-check-circle"></i> <span>コピーしました。</span></h3>
+                    <img src="images/modal_mail_icon.png" class="main-icon"/>
+                    <p class="modal-desc">
+                        コメントがあった際に<br/>
+                        通知を受け取ることができます。
+                    </p>
+
+                    <button class="btn main-button">通知を受け取る</button>
+                </div>
+              </div>
+              
+            </div>
+        </div>
+
+        <div class="modal fade" id="setting-modal" role="dialog">
+            <div class="modal-dialog">
+                <form class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <h3 class="modal-title">詳細設定</h3>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <label class="modal-checkbox">
+                                        <input type="checkbox" class="hidden" name="add_password" />
+                                        <span class="checkmark"></span>
+                                        <span>パスワードを設定</span>
+                                    </label>
+                                </div>
+                                <div class="col-xs-6">
+                                    <input type="password" class="form-control" disabled name="password" />
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-xs-7">
+                                    <label class="modal-checkbox">
+                                        <input type="checkbox" class="hidden" name="download_allow" />
+                                        <span class="checkmark"></span>
+                                        <span>ファイルのダウンロードを許可</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-default form-cancel">キャンセル</button>
+                        <button type="submit" class="btn main-button form-submit">完了</button>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <!-- end popup block -->
+
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+        //$('#setting-modal').modal();
+
+        $('[name="add_password"]').change((e) => {
+            if ($(e.target).prop('checked')) {
+                $('[name="password"]').attr('disabled', false);
+            } else {
+                $('[name="password"]').attr('disabled', true);
+            }
+        });
+    </script>
 </body>
 
 </html>

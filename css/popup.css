@@ -1,0 +1,228 @@
+/* ============================== general */
+.hv-popup .modal-dialog .modal-content {
+    border-radius: 4px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.hv-popup .modal-dialog .modal-content .modal-header,
+.hv-popup .modal-dialog .modal-content .modal-footer {
+    border: none;
+}
+
+.hv-popup .modal-dialog .modal-content::before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: red;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: -webkit-linear-gradient(79deg, #811975, #ec91b6);
+    background: -moz-linear-gradient(79deg, #811975, #ec91b6);
+    background: -o-linear-gradient(79deg, #811975, #ec91b6);
+    background: linear-gradient(79deg, #811975, #ec91b6);
+}
+
+.hv-popup .btn.active, .hv-popup .btn:active, .hv-popup .btn:focus {
+    outline: 0;
+}
+
+.hv-popup label {
+    font-weight: normal;
+}
+
+.hv-popup .main-button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    border-radius: 40px;
+    border: none;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.modal-checkbox {
+    position: relative;
+    padding-left: 35px;
+    margin-top: 10px;
+}
+
+.modal-checkbox span {
+    font-size: 1.2rem;
+    position: relative;
+    top: 2px;
+}
+
+.modal-checkbox .checkmark {
+    width: 16px;
+    height: 16px;
+    background-color: #e4e8e8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.modal-checkbox:hover .checkmark {
+    background: #9b3685;
+}
+
+.modal-checkbox .checkmark::after {
+    content: "";
+    opacity: 0;
+    width: 6px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    transition: all 0.3s;
+}
+
+.modal-checkbox [type="checkbox"]:checked ~ .checkmark {
+    background: #9b3685;
+}
+
+.modal-checkbox [type="checkbox"]:checked ~ .checkmark::after {
+    opacity: 1;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* ============================== end general */
+
+/* ============================== popup pre login */
+#pre-login-modal .modal-dialog,
+#email-modal  .modal-dialog{
+    max-width: 400px;
+    top: 15%;
+}
+
+#pre-login-modal .modal-dialog .modal-content .modal-body,
+#pre-login-modal .modal-dialog .modal-content .modal-footer,
+#email-modal .modal-dialog .modal-content .modal-body{
+    text-align: center;
+    padding: 0 20px;
+}
+
+#pre-login-modal .modal-dialog .modal-content .modal-footer p {
+    color: #9b9b9b;
+    font-size: 1.2rem;
+}
+
+#pre-login-modal .modal-dialog .modal-content .modal-footer span,
+#pre-login-modal .register-text span {
+    color: #9b3685;
+}
+
+#pre-login-modal .register-text {
+    margin-top: 30px;
+}
+
+.modal-title {
+    font-size: 1.6rem;
+    line-height: 1.38;
+    text-align: center;
+}
+
+#pre-login-modal .login-type {
+    margin-top: 40px;
+}
+
+#pre-login-modal .login-type .btn {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    border-radius: 40px;
+    border: none;
+    color: #fff;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+#pre-login-modal .login-type .btn i {
+    margin: 0 20px;
+    font-size: 1.6rem;
+}
+
+#pre-login-modal .login-type .btn img {
+    width: 20px;
+}
+
+#pre-login-modal .login-type .btn.gg-btn {
+    background: none;
+    box-shadow: 1px 1px 1px #9b9b9b;
+    color: #000;
+}
+
+#pre-login-modal .login-type .btn.fb-btn {
+    background: #3c5a99;
+}
+
+#pre-login-modal .login-type .btn.ld-btn {
+    background: #0079ba;
+}
+
+#pre-login-modal .login-type .btn.main-button:hover {
+    box-shadow: unset;
+}
+
+#email-modal .modal-title .mdi {
+    color: #7ed321;
+    font-size: 3.2rem;
+}
+
+#email-modal .modal-title span {
+    position: relative;
+    top: -5px;
+}
+
+#email-modal .main-icon {
+    width: 80px;
+    margin: 40px 0;
+}
+
+#email-modal .modal-desc {
+    color: #9b9b9b;
+    font-size: 1.2rem;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+#setting-modal  .modal-dialog {
+    top: 15%;
+}
+
+#setting-modal .modal-body,
+#setting-modal .modal-footer {
+    padding: 0 40px;
+}
+
+#setting-modal .modal-title {
+    margin-bottom: 30px;
+}
+
+#setting-modal .modal-body [type="password"] {
+    height: 40px;
+}
+
+#setting-modal .modal-footer {
+    margin-top: 40px;
+    border-top: solid 1px #e4e8e8;
+    padding-top: 20px;
+}
+
+#setting-modal .modal-footer .btn {
+    width: unset;
+    padding: 15px 30px;
+    border-radius: 40px;
+    font-size: 1.4rem;
+}
+
+#setting-modal .modal-footer .form-cancel {
+    color: #c1c1c4;
+}
+/* ============================== end popup pre login */

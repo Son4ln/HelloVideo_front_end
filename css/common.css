@@ -174,14 +174,14 @@ dl {
 }
 
 .main-button {
-    background: -webkit-linear-gradient(11deg, #811975, #ec91b6);
-    background: -o-linear-gradient(11deg, #811975, #ec91b6);
+    background: -webkit-linear-gradient(79deg, #811975, #ec91b6);
+    background: -o-linear-gradient(79deg, #811975, #ec91b6);
     background: linear-gradient(79deg, #811975, #ec91b6);
 }
 
 .main-button:hover {
-    background: -webkit-linear-gradient(11deg, #811975, #ec91b6);
-    background: -o-linear-gradient(11deg, #811975, #ec91b6);
+    background: -webkit-linear-gradient(79deg, #811975, #ec91b6);
+    background: -o-linear-gradient(79deg, #811975, #ec91b6);
     background: linear-gradient(79deg, #811975, #ec91b6);
     -webkit-box-shadow: 0 2px 16px 0 rgba(155, 54, 133, 0.48);
     box-shadow: 0 2px 16px 0 rgba(155, 54, 133, 0.48);
