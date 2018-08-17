@@ -7,6 +7,10 @@
     font-kerning: auto;
 }
 
+.rotate-45 {
+    transform: rotate(45deg);
+}
+
 html {
     line-height: normal;
     letter-spacing: normal;
@@ -93,12 +97,36 @@ img {
     font-weight: bold;
 }
 
+.text-500 {
+    font-weight: 500;
+}
+
 .font-helvetica {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
 .fs-16 {
     font-size: 16px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-22 {
+    font-size: 22px;
 }
 
 .fs-36 {
@@ -119,6 +147,18 @@ img {
 
 /*color*/
 
+.pink {
+    color: #cf70a4;
+}
+
+.silver {
+    color: #c1c1c4;
+}
+
+.white {
+    color: #fff;
+}
+
 .warm-grey {
     color: #9b9b9b;
 }
@@ -129,6 +169,22 @@ img {
 
 .warm-purple {
     color: #9b3685;
+}
+
+.bg-disable {
+    background-color: #e7e8ec;
+}
+
+.bg-wram-purple {
+    background-color: #9b3685;
+}
+
+.bg-dark-purple {
+    background-color: #781b6d;
+}
+
+.bg-pink {
+    background-color: #cf70a4;
 }
 
 
