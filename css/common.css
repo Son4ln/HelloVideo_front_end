@@ -53,6 +53,8 @@ img {
 /* display flex */
 
 .d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -311,7 +313,7 @@ dl {
 }
 
 #news {
-    background: #0b0b0b;
+    background-color: #0b0b0b;
     color: #9b9b9b;
     font-family: Helvetica;
     padding-top: 80px;
@@ -362,7 +364,7 @@ dl {
 
 footer {
     padding: 80px 0;
-    background: #000;
+    background-color: #000;
     color: #4c4c4c;
     text-align: center;
 }
