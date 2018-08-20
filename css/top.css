@@ -523,6 +523,24 @@ header {
     margin-top: 50px;
     display: inline-block;
 }
+
+.btn.back-to-top {
+    background: red;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+    background: rgba(220, 220, 220, 0.6);
+    font-size: 26px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.btn.back-to-top:focus,
+.btn.back-to-top:active {
+    outline: none !important;
+}
 /* ========================end intro-plan block */
 /* ========================reponsive block */
 @media (max-width: 768px) {
@@ -692,6 +710,10 @@ header {
     .plan-services.collapse {
         padding: 0 50px;
         transition: all 0.3s;
+    }
+
+    .plan-services {
+        margin-top: 30px;
     }
 }
 /* ========================end reponsive block */

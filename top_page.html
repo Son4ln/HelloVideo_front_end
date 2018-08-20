@@ -577,6 +577,10 @@
             </div>
         </footer>
     </div>
+
+    <button class="btn back-to-top">
+        <i class="mdi mdi-chevron-up"></i>
+    </button>
     
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -587,6 +591,10 @@
             $("html, body").animate({
                 scrollTop: $(hash).offset().top 
             }, 800);
+        });
+
+        $('.back-to-top').click('.back-to-top .mdi', function () {
+            $("html, body").animate({scrollTop: 0}, 800);
         });
     </script>
 </body>
