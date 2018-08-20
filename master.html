@@ -20,14 +20,11 @@
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                      <span class="sr-only">Toggle navigation</span>
-                                      <span class="icon-bar"></span>
-                                      <span class="icon-bar"></span>
-                                      <span class="icon-bar"></span>
-                                    </button>
-                        <div class="logo">
-                            <img src="images/logo.png" alt="">
-                        </div>
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
@@ -40,9 +37,9 @@
             </div>
         </nav>
     </header>
-
     <!-- end header -->
-    <section>
+    <!-- button default -->
+    <!-- <section>
         <button class="main-button button">
             main-button
         </button>
@@ -52,68 +49,86 @@
         <button class="billing-button button">
             billing-button
         </button>
-    </section>
+    </section> -->
+    <!--end button default -->
     <section id="news">
         <div class="wrapper">
             <div class="title">NEWS</div>
-
-            <dl>
-                <dt>2018.7.7</dt>
-                <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                    <a href="" title="more"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                </dd>
-            </dl>
-            <dl>
-                <dt>2018.7.7</dt>
-                <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                    <a href="" title="more"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                </dd>
-            </dl>
-            <dl>
-                <dt>2018.7.7</dt>
-                <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                    <a href="" title="more"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                </dd>
-            </dl>
+            <div class="news-list">
+                <dl>
+                    <a href="" title="">
+                        <dt>2018.7.7</dt>
+                        <dd>
+                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </dd>
+                    </a>
+                </dl>
+                <dl>
+                    <a href="" title="">
+                        <dt>2018.7.7</dt>
+                        <dd>
+                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </dd>
+                    </a>
+                </dl>
+                <dl>
+                    <a href="" title="">
+                        <dt>2018.7.7</dt>
+                        <dd>
+                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </dd>
+                    </a>
+                </dl>
+            </div>
         </div>
-
     </section>
     <footer>
-
-        <div class="logo">
-            <a href="./"><img src="images/footerlogo.png" alt="logo"></a>
+        <div class="wrapper">
+            <div class="clearfix">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <div class="logo">
+                        <a href="./" title="logo"><img src="images/footerlogo.png" alt="logo"></a>
+                    </div>
+                    <div class="social">
+                        <a href="" title="twitter" class="twitter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="" title="facebook" class="facebook">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 col-lg-offset-3 col-md-offset-3">
+                    <p class="white fs-16">COMPANY</p>
+                    <ul>
+                        <li><a href="" title="FAQ">FAQ</a></li>
+                        <li><a href="" title="プライバシーポリシー">プライバシーポリシー</a></li>
+                        <li><a href="" title="利用規約">利用規約</a></li>
+                        <li><a href="" title="特定商取引法に基づく表記">特定商取引法に基づく表記</a></li>
+                        <li><a href="" title="運営会社">運営会社</a></li>
+                        <li><a href="" title="お問合せ">お問合せ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <p class="white fs-16">SERVICE</p>
+                    <ul>
+                        <li><a href="" title="HelloVideo">HelloVideo</a></li>
+                        <li><a href="" title="Branch">Branch</a></li>
+                        <li><a href="" title="LOCA-FIT">LOCA-FIT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <address class="text-center greyish-brown">&copy; 2018 vivito inc. All Rights Reserved.</address>
         </div>
-        <div class="social">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-        </div>
-        <nav class="nav-footer">
-            <ul>
-                <li>
-                    <a href="">FAQ</a>
-                </li>
-                <li>
-                    <a href="">プライバシーポリシー</a>
-                </li>
-                <li>
-                    <a href="">利用規約</a>
-                </li>
-                <li>
-                    <a href="">特定商取引法に基づく表記</a>
-                </li>
-                <li>
-                    <a href="">運営会社</a>
-                </li>
-                <li>
-                    <a href="">お問合せ</a>
-                </li>
-            </ul>
-        </nav>
-        <address>&copy; 2018 vivito inc. All Rights Reserved.</address>
     </footer>
     <!-- /header -->
+
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
 </body>
 
 </html>
