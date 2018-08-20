@@ -20,20 +20,58 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    padding: 50px;
 }
 
 .block .desc h3 {
-    font-size: 1.6rem;
-    color: #fff;
-    font-weight: bold;
+    font-size: 1.8rem;
+    color: #9b3685;
+    letter-spacing: 0.7;
+}
+
+.block .desc h4 {
+    font-size: 2.8rem;
+    color: #e7e8ec;
+    line-height: 1.71;
+    letter-spacing: 1.2px;
+}
+
+.block .desc h3 hr {
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 0;
+    border: solid 1px #9b3685;
 }
 
 .block .desc p {
-    font-size: 3.4rem;
-    color: #fff;
-    line-height: 50px;
+    font-size: 1.4rem;
+    color: #9b9b9b;
+    line-height: 1.86;
+    letter-spacing: 0.6px;
     margin-top: 30px;
 }
+
+.block-1 .desc::after,
+.block-2 .desc::after {
+    background-repeat: no-repeat;
+    content : "";
+    display: block;
+    position: absolute;
+    top: -40px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -webkit-mask-size: 350px;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 350px;
+    mask-repeat: no-repeat;
+    opacity: 0.2;
+}
+
+.intro-scrolldown {
+    display: none;
+}
+
 
 /* ===========================end general */
 /* ========================intro block */
@@ -42,15 +80,27 @@ header {
     position: relative;
 }
 
+#intro .logo img{
+    width: 90%;
+}
+
 #intro {
     min-height: 810px;
-    padding-top: 200px;
+    padding-top: 150px;
     background: url('../images/top.jpg');
     background-repeat: no-repeat;
-    background: cover;
+    background-size: cover;
     background-position: center;
     z-index: 0;
     position: relative;
+}
+
+.first-desc {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    letter-spacing: 0.6px;
+    color: #e7e8ec;
+    margin-top: 30px;
 }
 
 #intro .intro_title {
@@ -97,11 +147,15 @@ header {
     font-size: 2.1rem;
 }
 .upload-block .upload-box p {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: #9b9b9b;
 }
 
 .upload-block .upload-box .icon-upload {
+    opacity: 0.4; 
+}
+
+.upload-block .upload-box .icon-upload img{
     width: 25%;
 }
 
@@ -123,11 +177,29 @@ header {
 /* ========================intro1 block */
 #intro1 {
     background: #000;
-    padding: 80px 0;
+    padding-top: 80px;
 }
 
 #intro1 .block-1 {
     margin-bottom: 100px;
+}
+
+#intro1 .block-1 .desc::after {
+    left: 0;
+    background-color: #fff;
+    -webkit-mask-image: url(../images/commentmode.svg);
+    -webkit-mask-position: top right;
+    mask-image: url(../images/commentmode.svg);
+    mask-position: top right;
+}
+
+#intro1 .block-2 .desc::after {
+    left: -50px;
+    background-color: #fff;
+    -webkit-mask-image: url(../images/preview.svg);
+    -webkit-mask-position: top left;
+    mask-image: url(../images/preview.svg);
+    mask-position: top right;
 }
 
 /* ========================end intro1 block */
@@ -141,95 +213,138 @@ header {
     margin-bottom: 100px;
 }
 
-#intro2 .block .desc h3,
-#intro2 .block .desc p {
+#intro2 .block .desc h4 {
     color: #000;
+}
+
+#intro2 .block .desc p {
+    color: #9b9b9b;
+}
+
+#intro2 .block-1 .desc::after {
+    /* left: 20%; */
+    right: 0;
+    background-color: #000;
+    -webkit-mask-image: url(../images/files.svg);
+    -webkit-mask-position: top right;
+    mask-image: url(../images/files.svg);
+    mask-position: top right;
+    opacity: 0.05;
+}
+
+#intro2 .block-2 .desc::after {
+    left: -20%;
+    background-color: #000;
+    -webkit-mask-image: url(../images/time.svg);
+    -webkit-mask-position: top left;
+    mask-image: url(../images/time.svg);
+    mask-position: top left;
+    opacity: 0.05;
 }
 /* ========================end intro2 block */
 /* ========================intro3 block */
-#intro3  {
-    background: #000;
-    padding: 80px 0;
+#intro3 {
+    background: #0d0d0d;
+    padding-top: 100px;
 }
 
-#intro3 .desc h3,
-#intro3 .desc h4,
-#intro3 .desc p {
-    color: #fff;
+
+#intro3 .block-1 .desc::after {
+    top: -30px;
+    right: 0;
+    /* right: -20%; */
+    background-color: #fff;
+    -webkit-mask-image: url(../images/device.svg);
+    -webkit-mask-position: top right;
+    mask-image: url(../images/device.svg);
+    mask-position: top right;
+}
+
+/* ========================end intro3 block */
+/* ========================intro4 block */
+#intro4  {
+    background: #000;
+    padding-top: 80px;
+    background-image: url('../images/intro4-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#intro4 .desc h4,
+#intro4 .desc p {
+    color: #e7e8ec;
     text-align: center;
     margin: 40px 0;
 }
 
-#intro3 .desc h3 {
-    font-size: 1.6rem;
-    font-weight: bold;
-}
-
-#intro3 .desc h4 {
-    font-size: 3.6rem;
+#intro4 .desc h4 {
+    font-size: 2.8rem;
     letter-spacing: 1.5px;
 }
 
-#intro3 .desc p {
+#intro4 .desc p {
     font-size: 1.6rem;
     line-height: 30px;
 }
 
-#intro3 .img-block {
-    max-width: 750px;
+#intro4 .img-block {
     margin-top: 40px;
-    margin-bottom: 40px;
+    overflow: hidden;
+    position: relative;
+    min-height: 460px;
 }
 
-.feature-desc .feature-inner h3,
-.feature-desc .feature-inner p {
-    color: #fff;
+#intro4 .img-block img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#intro4 .main-button {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.feature-desc .feature-inner {
+    text-align: center
 }
 
 .feature-desc .feature-inner h3 {
+    color: #e7e8ec;
     font-size: 1.8rem;
-    font-weight: bold;
     letter-spacing: 0.8px;
 }
 
 .feature-desc .feature-inner p {
-    font-size: 1.4rem;
+    color: #9b9b9b;
+    font-size: 1.3rem;
     line-height: 20px;
     letter-spacing: 0.6px;
-}
-/* ========================end intro3 block */
-/* ========================intro4 block */
-#intro4 {
-    background: #f5f6f9;
-    padding-top: 100px;
-}
-
-#intro4 h3,
-#intro4 p {
-    color: #000;
 }
 /* ========================end intro4 block */
 /* ========================intro-plan block */
 #intro-plan {
     background: #fff;
-    padding: 80px 0 150px 0;
+    padding: 80px 0;
 }
 
-#intro-plan .title-block h3,
+#intro-plan .title-block p,
 #intro-plan .title-block h4 {
-    color: #000;
     text-align: center;
     padding: 10px 0;
 }
 
-#intro-plan .title-block h3 {
-    font-size: 1.6rem;
-    font-weight: bold;
-}
-
 #intro-plan .title-block h4 {
+    color: #4c4c4c;
     font-size: 3.6rem;
     letter-spacing: 1.5px;
+    margin-bottom: 30px;
+}
+
+#intro-plan .title-block p {
+    color: #9b9b9b;
+    font-size: 1.4rem;
+    letter-spacing: 0.6px;
 }
 
 .plan-block {
@@ -240,16 +355,15 @@ header {
     border-radius: 4px;
     padding: 30px 0;
     height: 100%;
+    max-width: 265px;
+    margin: 0 auto;
 }
 
 .plan:hover {
-    transition: all 0.5s;
+    /* transition: all 0.5s;
     border: solid 1px #9b3685;
-    box-shadow: 0 2px 16px 0 rgba(155, 54, 133, 0.16);
-}
-
-.plan-block .plan1 {
-    background: #f5f6f9;
+    box-shadow: 0 2px 16px 0 rgba(155, 54, 133, 0.16); */
+    cursor: pointer;
 }
 
 .plan-title {
@@ -294,7 +408,11 @@ header {
     margin-right: 10px;
 }
 
-.active-icon {
+.active-service {
+    color: #4c4c4c !important;
+}
+
+.active-service i{
     color: #9b3685;
 }
 
@@ -309,6 +427,8 @@ header {
     padding: 10px 20px;
 }
 
+.plan2 .plan-title h3,
+.plan2 .plan-title h4,
 .plan3 .plan-title h3,
 .plan3 .plan-title h4,
 .plan4 .plan-title h3,
@@ -316,24 +436,113 @@ header {
     color: #9b3685;
 }
 
+.plan2 .plan-title h4 span,
 .plan3 .plan-title h4 span,
 .plan4 .plan-title h4 span {
     font-size: 1.4rem;
     font-weight: normal;
 }
 
+.plan2 .plan-title .payment-plan,
 .plan3 .plan-title .payment-plan,
-.plan4 .plan-title .payment-plan {
+.plan4 .plan-title .payment-plan{
     margin: 0;
 }
 
+.plan2 .plan-title .plan-desc,
 .plan3 .plan-title .plan-desc,
 .plan4 .plan-title .plan-desc {
     margin-top: 2rem;
 }
+
+.plan3 {
+    position: relative;
+    overflow: hidden;
+}
+
+.plan3:hover {
+    box-shadow: 0 8px 16px 0 rgba(155, 54, 133, 0.24);
+    -webkit-box-shadow: 0 8px 16px 0 rgba(155, 54, 133, 0.24);
+}
+
+.plan3::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;background: -webkit-linear-gradient(79deg, #811975, #ec91b6);
+    background: -o-linear-gradient(79deg, #811975, #ec91b6);
+    background: -moz-linear-gradient(79deg, #811975, #ec91b6);
+    background: -webkit-linear-gradient(79deg, #811975, #ec91b6);
+    background: linear-gradient(79deg, #811975, #ec91b6);
+    z-index: 1;
+}
+
+.plan3::after {
+    content: "オススメ";
+    position: absolute;
+    font-size: 1.1rem;
+    top: 20px;
+    left: 100px;
+    color: #fff;
+    width: 100%;
+    background: #811975;
+    text-align: center;
+    z-index: 2;
+    padding: 5px;
+    transform: rotate(45deg);
+}
+
+.view-sv-btn {
+    background: unset;
+    border: none;
+    color: #c1c1c4;
+    display: none;    
+}
+
+.view-sv-btn:focus,
+.view-sv-btn:active {
+    outline: none !important;
+}
+
+.plan-note {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    color: #9b9b9b;
+    margin: 30px 0;
+}
+
+.detail-btn {
+    padding: 10px 40px;
+    border-radius: 40px;
+    font-size: 1.4rem;
+    color: #9b9b9b;
+    margin-top: 50px;
+    display: inline-block;
+}
 /* ========================end intro-plan block */
 /* ========================reponsive block */
-@media (max-width: 970px) {
+@media (max-width: 768px) {
+    html {
+        font-size: 7px; 
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+    html {
+        font-size: 8px; 
+    }
+
+    .plan3::after {
+        top: 15px;
+        left: 80px;
+    }
+}
+
+@media (max-width: 991px) {
     /* ========================intro block */
     #intro .upload-block {
         position: unset;
@@ -343,6 +552,37 @@ header {
     .upload-block .row {
         display: unset;
     }
+
+    #intro .upload-block {
+        background: #000;
+        padding-top: 40px;
+        padding-bottom: 0;
+    }
+
+    #intro .logo img{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #intro .intro_title {
+        text-align: center;
+    }
+
+    .first-desc {
+        text-align: center;
+    }
+
+    .intro-scrolldown:active,
+    .intro-scrolldown:focus {
+        outline: none !important;
+    }
+
+    .intro-scrolldown {
+        display: inline-block;
+        font-size: 4.6rem;
+        color: #fff !important;
+        margin-top: 40px;
+        background: none;
+    }
     /* ========================end intro block */
     /* ========================intro1 block */
     .block {
@@ -350,21 +590,108 @@ header {
     }
 
     .block .desc {
-        display: unset;
+        display: block;
         position: unset;
         top: unset;
         left: unset;
         transform: unset;
+        padding: 0;
     }
-    #intro1 .block-2 .desc,
-    #intro2 .block-2 .desc {
-        float: right;
-        text-align: right;
+
+    #intro1 {
+        padding: 50px 15px;
+    }
+
+    #intro1 .block-1 {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
     }
     /* ========================end intro1 block */
+    /* ========================intro2 block */
+    #intro2 {
+        padding: 50px 0 0 0;
+    }
+
+    #intro2 .block-1 {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
+    }
+    /* ========================end intro2 block */
+    /* ========================intro3 block */
+    #intro3 {
+        padding: 40px 10px;
+    }
+    #intro3 .block-1 {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
+    }
+
+    .plan3::after {
+        top: 15px;
+        left: 108px;
+    }
+    /* ========================end intro3 block */
+
+    /* ========================intro4 block */
+    #intro4 {
+        padding: 30px 10px 0 10px;
+    }
+
+    #intro4 .img-block {
+        min-height: 200px;
+    }
+    /* ========================end intro4 block */
 
     .plan {
         margin-bottom: 30px;
+    }
+
+    #intro-plan .title-block p {
+        font-size: 2.4rem;
+        line-height: 1.8;
+    }
+
+    .plan-title p {
+        font-size: 1.6rem;
+        margin: 20px 0;
+    }
+
+    .plan-block .plan .plan-title hr {
+        display: none;
+    }
+
+    .plan-block .before-collapse {
+        display: none;
+    }
+
+    .plan .button {
+        margin-top: 0px;
+    }
+
+    .plan-note {
+        font-size: 1.6rem;
+        margin: 0;
+    }
+
+    .detail-btn {
+        font-size: 1.8rem;
+        margin-top: 30px;
+    }
+
+    .view-sv-btn {
+        display: block;
+    }
+
+    .plan-services ul li {
+        padding-left: 10px;
+    }
+
+    .plan-services.collapse {
+        padding: 0 50px;
+        transition: all 0.3s;
     }
 }
 /* ========================end reponsive block */

@@ -25,9 +25,6 @@
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                     </button>
-                        <div class="logo">
-                            <img src="images/logo.png" alt="">
-                        </div>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
@@ -44,7 +41,12 @@
         <section id="intro">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10">
+                    <div class="col-md-6">
+                        <div class="logo">
+                            <img src="images/logo.png" class="img-responsive" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
                         <h3 class="intro_title">
                             動画共有をより心地よく
                         </h3>
@@ -52,18 +54,31 @@
                         <h3 class="intro_title">
                             動画制作をもっと面白く
                         </h3>
+
+                        <p class="first-desc">
+                            面倒なアカウント登録や、ファイルのダウンロードも必要ありません。<br/>
+                            WEB上で動画の確認やフィードバックをし、もっと面白い動画を作り出そう。
+                        </p>
                     </div>
                 </div>
+
+                <center>
+                    <button data-target="#upload-block" class="btn intro-scrolldown">
+                    <i data-target="#upload-block" class="mdi mdi-chevron-down"></i></button>
+                </center>
+                
             </div>
 
-            <div class="upload-block">
+            <div id="upload-block" class="upload-block">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
                             <label for="input-single" class="upload-box">
-                                <h3 class="upload-title">動画のレビューをしたい</h3>
+                                <h3 class="upload-title">動画レビュー用のURLを送る</h3>
                                 <p class="upload-desc">手早く動画のコメントをもらいたいとき</p>
-                                <img src="images/upload_1.png" class="icon-upload" />
+                                <div class="icon-upload">
+                                    <img src="images/commentmode.svg"/>
+                                </div>
                                 <div class="drop-drag-title">
                                     <span>ドラッグ＆ドロップ もしくは
                                         <span class="upload-btn">
@@ -79,9 +94,11 @@
                         </div>
                         <div class="col-md-6">
                             <label for="input-multi" class="upload-box">
-                                <h3 class="upload-title">ファイルを送りたい</h3>
+                                <h3 class="upload-title">ファイル送付用のURLを送る</h3>
                                 <p class="upload-desc">素材ファイルなどを今直ぐ送りたいとき</p>
-                                <img src="images/upload_2.png" class="icon-upload">
+                                <div class="icon-upload">
+                                    <img src="images/files.svg">
+                                </div>
                                 <div class="drop-drag-title">
                                     <span>ドラッグ＆ドロップ もしくは
                                         <span class="upload-btn">
@@ -103,16 +120,24 @@
             <div class="container-fluid px-0">
                 <div class="row mx-0 block block-1">
                     <div class="col-md-6 px-0">
-                        <img src="images/intro_pic1.png" class="img-responsive"/>
+                        <img src="images/comment@2x.png" class="img-responsive"/>
                     </div>
                     <div class="col-md-6">
                         <div class="desc">
-                            <img src="images/desc_icon_1.png" class="desc-icon"/>
-                            <h3>COMMENT MODE</h3>
-                            <p>
-                                ログイン・ダウンロード無しで <br/>
-                                動画の確認・フィードバックを <br/>
+                            
+                            <h3>
+                                COMMENT
+                                <hr/>
+                            </h3>
+
+                            <h4>
+                                動画の確認・フィードバックを<br/>
                                 もっと手軽に
+                            </h4>
+
+                            <p>
+                                面倒なアカウント登録や、ファイルのダウンロードは必要ありません。<br/>
+                                WEB上で動画の確認、コメントをもっと手軽に行いましょう。
                             </p>
                         </div>
                     </div>
@@ -121,16 +146,24 @@
                 <div class="row mx-0 block block-2">
                     <div class="col-md-6">
                         <div class="desc">
-                            <img src="images/desc_icon_2.png" class="desc-icon"/>
-                            <h3>PREVIEW MODE</h3>
+                            <h3>
+                                PREVIEW
+                                <hr/>
+                            </h3>
+
+                            <h4>
+                                コメントが必要ないときは<br/>
+                                プレビュー機能で共有
+                            </h4>
+
                             <p>
-                                プレビュー表示で<br/>
-                                コメント機能はオフに
+                                クライアントへ動画を共有したいときなど、<br/>
+                                コメントを非表示にして共有可能です。
                             </p>
                         </div>
                     </div>
                     <div class="col-md-6 px-0">
-                        <img src="images/intro_pic2.png" class="img-responsive"/>
+                        <img src="images/preview@2x.png" class="img-responsive"/>
                     </div>
                 </div>
             </div>
@@ -140,14 +173,22 @@
                 <div class="container-fluid px-0">
                     <div class="row mx-0 block block-1">
                         <div class="col-md-6 px-0">
-                            <img src="images/intro_pic3.png" class="img-responsive"/>
+                            <img src="images/file@2x.png" class="img-responsive"/>
                         </div>
                         <div class="col-md-6">
                             <div class="desc">
-                                <img src="images/desc_icon_3.png" class="desc-icon"/>
-                                <h3>FILE SHARE</h3>
-                                <p>
+                                <h3>
+                                    SHARE
+                                    <hr/>
+                                </h3>
+                                
+                                <h4>
                                     簡単、手早くファイル共有
+                                </h4>
+    
+                                <p>
+                                    登録せずに、手軽にファイルをアップロード。<br/>
+                                    URLの共有で簡単にファイルシェアができます。
                                 </p>
                             </div>
                         </div>
@@ -156,12 +197,20 @@
                     <div class="row mx-0 block block-2">
                         <div class="col-md-6">
                             <div class="desc">
-                                <img src="images/desc_icon_4.png" class="desc-icon"/>
-                                <h3>FILE UPLOAD</h3>
-                                <p>
-                                    アップロード時間を<br/>
-                                    圧倒的に短縮
-                                </p>
+                                    <h3>
+                                        SPEED
+                                        <hr/>
+                                    </h3>
+                                    
+                                    <h4>
+                                        アップロード時間を<br/>
+                                        圧倒的に短縮
+                                    </h4>
+        
+                                    <p>
+                                        923MBの動画ファイルをアップロードした際の<br/>
+                                        アップロード時間です。
+                                    </p>
                             </div>
                         </div>
                         <div class="col-md-6 px-0">
@@ -173,60 +222,27 @@
 
         <section id="intro3">
             <div class="container-fluid px-0">
-                <div class="desc">
-                    <h3>TEAM COLLABORATION</h3>
-                    <h4>アカウント登録でもっと便利に</h4>
-                    <p>
-                        アカウント登録すると、プロジェクトの作成が可能です。<br/>
-                        プロジェト内のファイルは保管期限はないので、<br/>
-                        期間に縛られず継続してご利用いただけます。
-                    </p>
-                </div>
+                <div class="row mx-0 block block-1">
+                    <div class="col-md-6 px-0">
+                        <img src="images/ipad-tablet@2x.png" class="img-responsive"/>
+                    </div>
 
-                <button class="main-button button center-block">アカウント登録</button>
-
-                <div class="img-block center-block">
-                    <img src="images/intro_pic5.png" class="img-responsive"/>
-                </div>
-
-                <div class="feature-desc">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="feature-inner">
-                                    <img src="images/desc_icon_5.png" class="desc-icon"/>
-                                    <h3>保管期間が無制限</h3>
-                                    <p>
-                                        フィードバックが欲しい動画をシェアすれ<br/>
-                                        ば、送られた相手はダウンロードすること<br/>
-                                        なく確認できます。
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="feature-inner">
-                                    <img src="images/desc_icon_6.png" class="desc-icon"/>
-                                    <h3>メンバーに更新を通知</h3>
-                                    <p>
-                                        SNS連携でログインは簡単ですが、名前を<br/>
-                                        入れるだけでも、素早くコメントを残すこ<br/>
-                                        とができます。
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="feature-inner">
-                                    <img src="images/desc_icon_7.png" class="desc-icon"/>
-                                    <h3>メンバーごとに権限設定が可能</h3>
-                                    <p>
-                                        フィードバックが欲しい動画をシェアすれ<br/>
-                                        ば、送られた相手はダウンロードすること<br/>
-                                        なく確認できます。<br/>
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="col-md-6">
+                        <div class="desc">
+                                <h3>
+                                    DEVICE
+                                    <hr/>
+                                </h3>
+                                
+                                <h4>
+                                    スマートフォンや <br/>
+                                    タブレットからも簡単確認
+                                </h4>
+    
+                                <p>
+                                    移動時間などの合間の時間にも、スマホやタブレットから <br/>
+                                    簡単に確認ができて、コメントも可能です。
+                                </p>
                         </div>
                     </div>
                 </div>
@@ -235,21 +251,59 @@
 
         <section id="intro4">
             <div class="container-fluid px-0">
-                <div class="row mx-0 block">
-                    <div class="col-md-6">
-                        <div class="desc">
-                            <img src="images/desc_icon_8.png" class="desc-icon"/>
-                            <h3>DEVICE</h3>
-                            <p>
-                                スマートフォンや<br/>
-                                タブレットからも<br/>
-                                簡単確認、フィードバック
-                            </p>
+                <div class="desc">
+                    <h4>アカウント登録でもっと便利に</h4>
+                </div>
+
+                <div class="feature-desc">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="feature-inner">
+                                    <img src="images/infinity.svg" class="desc-icon"/>
+                                    <h3>保管期間が無制限</h3>
+                                    <p>
+                                        プロジェクト内へアップロードした動画は<br/>
+                                        保管期間が無期限です。<br/>
+                                        長期にわたるプロジェクトで動画や<br/>
+                                        資料の保管庫としてご利用いただけます。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="feature-inner">
+                                    <img src="images/notification.svg" class="desc-icon"/>
+                                    <h3>メンバーに更新を通知</h3>
+                                    <p>
+                                        プロジェクト内のメンバーには、<br/>
+                                        コメントやファイルのアップロードがされた<br/>
+                                        時に通知を送ることができます。<br/>
+                                        やりとりを効率化しましょう。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="feature-inner">
+                                    <img src="images/settings.svg" class="desc-icon"/>
+                                    <h3>メンバーごとに権限設定が可能</h3>
+                                    <p>
+                                            メンバーごとに編集や<br/>
+                                            コメントの権限の変更が可能です。<br/>
+                                            メンバーが多い時や、クライアントも<br/>
+                                            メンバーに加わる時などに利用しましょう。
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 px-0">
-                        <img src="images/intro_pic6.png" class="img-responsive"/>
-                    </div>
+                </div>
+
+                <button class="main-button button center-block">アカウント登録</button>
+
+                <div class="img-block center-block container">
+                    <img src="images/3-rd@2x.png" class="img-responsive"/>
                 </div>
             </div>
         </section>
@@ -257,39 +311,14 @@
         <section id="intro-plan">
             <div class="container">
                 <div class="title-block">
-                    <h3>PLAN</h3>
                     <h4>料金プラン</h4>
+                    <p>フリープラン、もしくは有料プランも14日間のお試しからご利用ください。</p>
                 </div>
 
                 <div class="plan-block">
                     <div class="row block">
                         <div class="col-md-3">
-                            <div class="plan plan1">
-                                <div class="plan-title">
-                                    <h3>アカウント無し</h3>
-                                    <h4>無料</h4>
-                                    <p class="plan-desc">
-                                        登録無しで手早く<br/>
-                                        ファイルを共有したい
-                                    </p>
-
-                                    <hr/>
-                                </div>
-
-                                <div class="plan-services">
-                                    <ul>
-                                        <li><i class="mdi mdi-comment-processing-outline active-icon"></i> <span>動画レビュー</span></li>
-                                        <li><i class="mdi mdi-bell-outline active-icon"></i> 通知機能</li>
-                                        <li><i class="mdi mdi-buffer"></i> プロジェクト無し</li>
-                                        <li><i class="mdi mdi-cloud-upload"></i> プロジェクト容量無し</li>
-                                        <li><i class="mdi mdi-restore"></i> 履歴の復元不可</li>
-                                    </ul>
-                                </div>
-                            </div>              
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="plan plan2 plan-shadow">
+                            <div class="plan plan1 plan-shadow">
                                 <div class="plan-title">
                                     <h3>フリープラン</h3>
                                     <h4>無料</h4>
@@ -301,12 +330,12 @@
                                     <hr/>
                                 </div>
 
-                                <div class="plan-services">
+                                <div class="plan-services before-collapse">
                                     <ul>
-                                        <li><i class="mdi mdi-comment-processing-outline active-icon"></i> <span>動画レビュー</span></li>
-                                        <li><i class="mdi mdi-bell-outline active-icon"></i> 通知機能</li>
-                                        <li><i class="mdi mdi-buffer active-icon"></i> 1プロジェクト</li>
-                                        <li><i class="mdi mdi-cloud-upload active-icon"></i> ２GB</li>
+                                        <li class="active-service"><i class="mdi mdi-comment-processing-outline"></i> <span>動画レビュー</span></li>
+                                        <li class="active-service"><i class="mdi mdi-bell-outline"></i> 通知機能</li>
+                                        <li class="active-service"><i class="mdi mdi-buffer"></i> 1プロジェクト</li>
+                                        <li class="active-service"><i class="mdi mdi-cloud-upload"></i> ２GB</li>
                                         <li><i class="mdi mdi-restore"></i> 履歴の復元不可</li>
                                     </ul>
                                 </div>
@@ -314,45 +343,29 @@
                                 <button class="main-button button center-block">
                                     アカウント登録
                                 </button>
-                            </div>
-                        </div>
 
-                        <div class="col-md-3">
-                            <div class="plan plan3 plan-shadow">
-                                <div class="plan-title">
-                                    <h3>スタンダードプラン</h3>
-                                    <h4>980円<span>/月</span></h4>
-                                    <p class="payment-plan">（年間での支払い）</p>
-                                    <p class="plan-desc">
-                                        複数のプロジェクトで<br/>
-                                        ファイルのやりとりをされる方
-                                    </p>
+                                <button type="button" class="btn view-sv-btn center-block"
+                                data-toggle="collapse" data-target="#plan-sv1">詳しく見る <i class="mdi mdi-chevron-down"></i></button>
 
+                                <div class="plan-services collapse" id="plan-sv1">
                                     <hr/>
-                                </div>
-
-                                <div class="plan-services">
                                     <ul>
-                                        <li><i class="mdi mdi-comment-processing-outline active-icon"></i> <span>動画レビュー</span></li>
-                                        <li><i class="mdi mdi-bell-outline active-icon"></i> 通知機能</li>
-                                        <li><i class="mdi mdi-buffer active-icon"></i> 5プロジェクト</li>
-                                        <li><i class="mdi mdi-cloud-upload active-icon"></i> 150GB</li>
-                                        <li><i class="mdi mdi-restore active-icon"></i> 1ヶ月前のファイルまで</li>
+                                        <li class="active-service"><i class="mdi mdi-comment-processing-outline"></i> <span>動画レビュー</span></li>
+                                        <li class="active-service"><i class="mdi mdi-bell-outline"></i> 通知機能</li>
+                                        <li class="active-service"><i class="mdi mdi-buffer"></i> 1プロジェクト</li>
+                                        <li class="active-service"><i class="mdi mdi-cloud-upload"></i> ２GB</li>
+                                        <li><i class="mdi mdi-restore"></i> 履歴の復元不可</li>
                                     </ul>
                                 </div>
-
-                                <button class="billing-button button center-block">
-                                    14日間無料体験
-                                </button>
                             </div>
                         </div>
 
                         <div class="col-md-3">
-                            <div class="plan plan4 plan-shadow">
+                            <div class="plan plan2 plan-shadow">
                                 <div class="plan-title">
-                                    <h3>プロプラン</h3>
-                                    <h4>2,280円<span>/月</span></h4>
-                                    <p class="payment-plan">（年間での支払い）</p>
+                                    <h3>ライトプラン</h3>
+                                    <h4>980円<span>/月</span></h4>
+                                    <p class="payment-plan">（年間でのお支払い）</p>
                                     <p class="plan-desc">
                                         容量を気にせず複数プロジェクトで<br/>
                                         ファイルのやりとりをしたい方
@@ -361,23 +374,132 @@
                                     <hr/>
                                 </div>
 
-                                <div class="plan-services">
+                                <div class="plan-services before-collapse">
                                     <ul>
-                                        <li><i class="mdi mdi-comment-processing-outline active-icon"></i> <span>動画レビュー</span></li>
-                                        <li><i class="mdi mdi-bell-outline active-icon"></i> 通知機能</li>
-                                        <li><i class="mdi mdi-buffer active-icon"></i> 無制限</li>
-                                        <li><i class="mdi mdi-cloud-upload active-icon"></i> 500GB</li>
-                                        <li><i class="mdi mdi-restore active-icon"></i> 3ヶ月前のファイルまで</li>
+                                        <li class="active-service"><i class="mdi mdi-comment-processing-outline"></i> <span>動画レビュー</span></li>
+                                        <li class="active-service"><i class="mdi mdi-bell-outline"></i> 通知機能</li>
+                                        <li class="active-service"><i class="mdi mdi-buffer"></i> 無制限</li>
+                                        <li class="active-service"><i class="mdi mdi-cloud-upload"></i> 150GB</li>
+                                        <li class="active-service"><i class="mdi mdi-restore"></i> 1ヶ月前のファイルまで</li>
                                     </ul>
                                 </div>
 
                                 <button class="billing-button button center-block">
                                     14日間無料体験
                                 </button>
+
+                                <button type="button" class="btn view-sv-btn center-block"
+                                data-toggle="collapse" data-target="#plan-sv2">詳しく見る <i class="mdi mdi-chevron-down"></i></button>
+
+                                <div class="plan-services collapse" id="plan-sv2">
+                                    <hr/>
+                                    <ul>
+                                        <li class="active-service"><i class="mdi mdi-comment-processing-outline"></i> <span>動画レビュー</span></li>
+                                        <li class="active-service"><i class="mdi mdi-bell-outline"></i> 通知機能</li>
+                                        <li class="active-service"><i class="mdi mdi-buffer"></i> 無制限</li>
+                                        <li class="active-service"><i class="mdi mdi-cloud-upload"></i> 150GB</li>
+                                        <li class="active-service"><i class="mdi mdi-restore"></i> 1ヶ月前のファイルまで</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="plan plan3 plan-shadow">
+                                <div class="plan-title">
+                                    <h3>スタンダードプラン</h3>
+                                    <h4>2,280円<span>/月</span></h4>
+                                    <p class="payment-plan">（年間でのお支払い）</p>
+                                    <p class="plan-desc">
+                                        複数のプロジェクトで<br/>
+                                        ファイルのやりとりをされる方
+                                    </p>
+
+                                    <hr/>
+                                </div>
+
+                                <div class="plan-services before-collapse">
+                                    <ul>
+                                        <li class="active-service"><i class="mdi mdi-comment-processing-outline"></i> <span>動画レビュー</span></li>
+                                        <li class="active-service"><i class="mdi mdi-bell-outline"></i> 通知機能</li>
+                                        <li class="active-service"><i class="mdi mdi-buffer"></i> 5プロジェクト</li>
+                                        <li class="active-service"><i class="mdi mdi-cloud-upload"></i> 500GB</li>
+                                        <li class="active-service"><i class="mdi mdi-restore"></i> 3ヶ月前のファイルまで</li>
+                                    </ul>
+                                </div>
+
+                                <button class="billing-button button center-block">
+                                    14日間無料体験
+                                </button>
+
+                                <button type="button" class="btn view-sv-btn center-block"
+                                data-toggle="collapse" data-target="#plan-sv3">詳しく見る <i class="mdi mdi-chevron-down"></i></button>
+
+                                <div class="plan-services collapse" id="plan-sv3">
+                                    <hr/>
+                                    <ul>
+                                        <li class="active-service"><i class="mdi mdi-comment-processing-outline"></i> <span>動画レビュー</span></li>
+                                        <li class="active-service"><i class="mdi mdi-bell-outline"></i> 通知機能</li>
+                                        <li class="active-service"><i class="mdi mdi-buffer"></i> 5プロジェクト</li>
+                                        <li class="active-service"><i class="mdi mdi-cloud-upload"></i> 500GB</li>
+                                        <li class="active-service"><i class="mdi mdi-restore"></i> 3ヶ月前のファイルまで</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="plan plan4 plan-shadow">
+                                <div class="plan-title">
+                                    <h3>プロプラン</h3>
+                                    <h4>3,280円<span>/月</span></h4>
+                                    <p class="payment-plan">（年間でのお支払い）</p>
+                                    <p class="plan-desc">
+                                        容量を気にせず複数プロジェクトで<br/>
+                                        ファイルのやりとりをしたい方
+                                    </p>
+
+                                    <hr/>
+                                </div>
+
+                                <div class="plan-services before-collapse">
+                                    <ul>
+                                        <li class="active-service"><i class="mdi mdi-comment-processing-outline"></i> <span>動画レビュー</span></li>
+                                        <li class="active-service"><i class="mdi mdi-bell-outline"></i> 通知機能</li>
+                                        <li class="active-service"><i class="mdi mdi-buffer"></i> 無制限</li>
+                                        <li class="active-service"><i class="mdi mdi-cloud-upload"></i> 500GB</li>
+                                        <li class="active-service"><i class="mdi mdi-restore"></i> 3ヶ月前のファイルまで</li>
+                                    </ul>
+                                </div>
+
+                                <button class="billing-button button center-block">
+                                    14日間無料体験
+                                </button>
+
+                                <button type="button" class="btn view-sv-btn center-block"
+                                data-toggle="collapse" data-target="#plan-sv4">詳しく見る <i class="mdi mdi-chevron-down"></i></button>
+
+                                <div class="plan-services collapse" id="plan-sv4">
+                                    <hr/>
+                                    <ul>
+                                        <li class="active-service"><i class="mdi mdi-comment-processing-outline"></i> <span>動画レビュー</span></li>
+                                        <li class="active-service"><i class="mdi mdi-bell-outline"></i> 通知機能</li>
+                                        <li class="active-service"><i class="mdi mdi-buffer"></i> 無制限</li>
+                                        <li class="active-service"><i class="mdi mdi-cloud-upload"></i> 500GB</li>
+                                        <li class="active-service"><i class="mdi mdi-restore"></i> 3ヶ月前のファイルまで</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <p class="plan-note">※アカウント無しでも動画レビュー機能（保管期間7日間）の使用は可能です。</p>
+
+                <center>
+                    <a href="#" class="btn btn-default center-block detail-btn">料金プランの詳細へ <i class="mdi mdi-chevron-right"></i></a>
+                </center>
             </div>
         </section>
 
@@ -443,6 +565,15 @@
     
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+        $('.intro-scrolldown').click('.intro-scrolldown .mdi', function(e){
+            e.preventDefault();
+            var hash = $(e.target).attr('data-target');
+            $("html, body").animate({
+                scrollTop: $(hash).offset().top 
+            }, 800);
+        });
+    </script>
 </body>
 
 </html>
