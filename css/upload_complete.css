@@ -10,6 +10,10 @@
 .desc-icon {
     width: 100px;
 }
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #9b9b9b;
+}
 /* ==================upload-complete block */
 #upload-complete {
     padding: 80px 0;
